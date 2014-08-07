@@ -1,0 +1,9 @@
+idea
+*.iml
+build
+example
+script
+specs
+.travis.yml
+karma.conf.js
+webpack.config.js
