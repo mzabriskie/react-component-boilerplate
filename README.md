@@ -2,32 +2,12 @@
 
 Boilerplate for creating React components
 
-## Setup
+## Installing
 
-1. Clone boilerplate
-	- `$ git clone https://github.com/mzabriskie/react-component-boilerplate.git`
-1. Delete .git
-	- `$ cd react-component-boilerplate && rm -rf .git`
-1. Install dependencies
-	- `$ npm install`
-1. Update `package.json`
-	- `name`
-	- `version`
-	- `description`
-	- `repository`
-	- `keywords`
-	- `author`
-	- `license`
-	- `bugs`
-	- `homepage`
-1. Rename `lib/example.js`
-	- `$ mv lib/example.js lib/whatever.js`
-	- `$ vim lib/main.js`
-	- `$ vim example/main.js`
-	- `$ vim specs/example.spec.js`
-1. Rename `specs/example.spec.js`
-	- `$ mv specs/example.spec.js specs/whatever.spec.js`
-	- `$ vim specs/main.js`
+```bash
+$ git clone https://github.com/mzabriskie/react-component-boilerplate.git
+$ npm install
+```
 
 ## Building
 
@@ -47,4 +27,38 @@ Start karma
 $ npm test
 # or
 $ ./script/test --auto-watch
+```
+
+## Running
+
+A simple example is setup to run out of the box
+
+```bash
+$ npm start
+$ open example/index.html
+```
+
+
+## Setup
+
+You'll need to change a few things
+
+```bash
+# Delete .git
+$ cd react-component-boilerplate
+$ rm -rf .git
+
+# Update package.json
+# name, version, description, repository, keywords, author, license, bugs, homepage
+$ vim package.json
+
+# Rename lib/example.js
+$ mv lib/example.js lib/whatever.js
+$ vim lib/main.js
+$ vim example/main.js
+$ vim specs/example.spec.js
+
+# Rename specs/example.spec.js
+$ mv specs/example.spec.js specs/whatever.spec.js
+$ vim specs/main.js
 ```
