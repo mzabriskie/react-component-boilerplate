@@ -48,14 +48,21 @@ You'll need to change a few things
 $ cd react-component-boilerplate
 $ rm -rf .git
 
-# Update package.json
+# Update package.json and bower.json
 # name, version, description, repository, keywords, author, license, bugs, homepage
 $ vim package.json
+$ vim bower.json
+
+# Update webpack.config.js
+$ vim webpack.config.js
+
+# Update build script
+$ vim script/build
 
 # Rename lib/example.js
 $ mv lib/example.js lib/whatever.js
-$ vim lib/main.js
-$ vim example/main.js
+$ vim index.js
+$ vim example/index.html
 $ vim specs/example.spec.js
 
 # Rename specs/example.spec.js
