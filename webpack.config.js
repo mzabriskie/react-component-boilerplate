@@ -1,7 +1,13 @@
 module.exports = {
-  entry: './example/main.js',
+  entry: './index.js',
   output: {
-    filename: './build/bundle.js'
+    filename: './dist/example.js',
+    sourceMapFilename: './dist/example.map',
+    library: 'Example',
+    libraryTarget: 'umd'
+  },
+  externals: {
+    'react/addons': 'React'
   },
   module: {
     loaders: [

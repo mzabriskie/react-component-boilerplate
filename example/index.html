@@ -5,6 +5,22 @@
   <title>React Component Boilerplate</title>
 </head>
 <body>
-  <script src="../build/bundle.js"></script>
+<script src="//fb.me/react-with-addons-0.11.1.js"></script>
+<script src="//fb.me/JSXTransformer-0.11.1.js"></script>
+<script src="../dist/example.js"></script>
+<script type="text/jsx">
+  /** @jsx React.DOM */
+  var App = React.createClass({
+    render: function () {
+      return (
+        <div>
+          <Example/>
+        </div>
+      );
+    }
+  });
+
+  React.renderComponent(<App/>, document.body);
+</script>
 </body>
 </html>

@@ -1,2 +1,8 @@
 #!/bin/sh
-node_modules/.bin/webpack --watch --devtool inline-source-map
+webpack --devtool source-map
+
+node_modules/.bin/uglifyjs dist/example.js \
+  --output dist/example.min.js \
+  --source-map dist/example.min.map \
+  --source-map-url example.min.map \
+  --compress warnings=false
