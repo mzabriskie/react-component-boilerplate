@@ -2,6 +2,8 @@
 
 Boilerplate for creating React components
 
+__NOTICE:__ This boilerplate is outdated, and will not receive any updates. Take a look at [rackt-cli](https://github.com/mzabriskie/rackt-cli) instead.
+
 ## Installing
 
 ```bash
